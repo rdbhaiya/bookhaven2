@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <section class="showcase2">
+        <header>
+          <h1 class="logo1">ACCOUNT</h1>
+          <div class="toggle1"></div>
+        </header>
+        <video src="book2.mp4" muted loop autoplay></video>
+        <form action="index7.html" method="get">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <lable>Already have account <a href="index7.html" style="color: white;">Sign In</a></lable>
+            <input type="submit" formaction="index7.html" value="Create Account">
+        </form>
+      </section>
+      <script>
+        const menuToggle1 = document.querySelector('.toggle1')
+        const showcase1 = document.querySelector('.showcase2')
+        menuToggle1.addEventListener('click', () => {
+          menuToggle1.classList.toggle('active')
+          showcase1.classList.toggle('active')
+        })
+      </script>
+    
+</body>
+</html>

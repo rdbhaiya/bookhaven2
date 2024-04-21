@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+          <h2 class="logo">RUPAM DAS</h2>
+          <div class="toggle "></div>
+        </header>
+        <video src="book2.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>BOOK HAVEN</h2> 
+          <h3>WHERE TALES SPARK!</h3>
+          <p>With a rich legacy spanning generations, Book Haven is a revered cornerstone of the literary world. Our commitment to excellence is evident in our curated collection, boasting timeless classics and contemporary gems. Step into our storied space and feel the embrace of literary history, where every book holds a tale of its own. Join our vibrant community of readers, where author signings, book clubs, and events foster connections and ignite imaginations. Follow us for the latest releases and exclusive promotions, and let Book Haven be your guide on a journey of literary discovery. Welcome to Book Haven - Where the past meets the present, and every page turns into an adventure.</p>
+          <a href="index2.html">Catalogue</a>
+        </div>
+        <ul class="social">
+          <li><a href="#" target="_main"><img src="discord.png" alt="Discord" height="48"></a></li>
+          <li><a href="#" target="_main"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt="Twitter" ></a></li>
+          <li><a href="#" target="_main"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt="Instagram"></a></li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html"> Catalogue</a></li>
+          <li><a href="index3.html">Shopping cart</a></li>
+          <li><a href="index4.html">Contact</a></li>
+          <li class="account"><a href="index5.html"><i class="fa-solid fa-user"></i>Account</a></li>
+        </ul> 
+      </div>
+      <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+        menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active')
+          showcase.classList.toggle('active')
+        })
+      </script>
+   
+</body>
+</html>

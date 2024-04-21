@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section class="showcase2">
+        <header>
+          <h1 class="logo1">CONTACT</h1>
+          <div class="toggle1"></div>
+        </header>
+        <video src="book2.mp4" muted loop autoplay></video>
+        <div class="overlay1"></div>
+        <ul class="Gmail">
+          <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_main"><img src="gmail-logo.png" alt="Gmail" height="48"></a></li>
+          <h5>111bookhaven@gmail.com</h5>     
+        </ul>
+        <ul class="Phone">
+          <li><img src="phone-call.png"alt="phone"height="48"></a></li>
+          <h5>1244210000</h5>
+        </ul>
+        <ul class="location">
+          <li><img src="location.png" alt="location" height="48"></li>
+          <h5>42 Evergreen Terrace,Springfield, Anytown, USA</h5>
+        </ul>
+          
+      
+      </section>
+      <div class="menu1">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html"> Catalogue</a></li>
+          <li><a href="index3.html">Shopping cart</a></li>
+          <li><a href="index4.html">Contact</a></li>
+          <li class="account"><a href="index5.html"><i class="fa-solid fa-user"></i>Account</a></li>
+        </ul> 
+      </div>
+      <script>
+        const menuToggle1 = document.querySelector('.toggle1')
+        const showcase1 = document.querySelector('.showcase2')
+        menuToggle1.addEventListener('click', () => {
+          menuToggle1.classList.toggle('active')
+          showcase1.classList.toggle('active')
+        })
+      </script>
+    
+</body>
+</html>

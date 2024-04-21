@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <section class="showcase2">
+        <header>
+          <h1 class="logo1">PAYMENT</h1>
+          <div class="toggle1"></div>
+        </header>
+        <video src="book2.mp4" muted loop autoplay></video>
+        
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="rupam das">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="kolkata">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="india">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. rupam das">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+    </div> 
+      </section>
+      <div class="menu8">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html"> Catalogue</a></li>
+          <li><a href="index3.html">Shopping cart</a></li>
+          <li><a href="index4.html">Contact</a></li>
+          <li class="account"><a href="index5.html"><i class="fa-solid fa-user"></i>Account</a></li>
+        </ul> 
+      </div>
+      <script>
+        const menuToggle1 = document.querySelector('.toggle1')
+        const showcase1 = document.querySelector('.showcase2')
+        menuToggle1.addEventListener('click', () => {
+          menuToggle1.classList.toggle('active')
+          showcase1.classList.toggle('active')
+        })
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="showcase2">
+        <header>
+            <h1 class="logo1">SHOPPING CART</h1>
+            <div class="toggle1"></div>
+        </header>
+        <video src="book2.mp4" muted loop autoplay></video>
+        <div class="overlay1"></div>
+        <div class="cart-box">
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <a href="index6.html"><button class="checkout-btn">Proceed to Checkout</button></a>
+        </div>
+    </section>
+    <div class="menu1">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+              <li><a href="index2.html"> Catalogue</a></li>
+              <li><a href="index3.html">Shopping cart</a></li>
+              <li><a href="index4.html">Contact</a></li>
+              <li class="account"><a href="index5.html"><i class="fa-solid fa-user"></i>Account</a></li>
+        </ul> 
+    </div>
+    <script>
+        // Function to update the cart items on index6.html
+        function updateCartItems() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            if (!cartItemsContainer) return;
+
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            cartItemsContainer.innerHTML = ''; // Clear existing items
+
+            cartItems.forEach(item => {
+                const { name, quantity, price } = item;
+                const itemHTML = `
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <span>${name} x ${quantity}</span>
+                            <div class="totalPrice">$${(quantity * price).toFixed(2)}</div>
+                        </div>
+                    </div>
+                `;
+                cartItemsContainer.insertAdjacentHTML('beforeend', itemHTML);
+            });
+        }
+
+        // Call update function when the page loads
+        window.addEventListener('load', () => {
+            updateCartItems();
+        });
+    </script>
+    <script>
+        const menuToggle8 = document.querySelector('.toggle1');
+        const showcase8 = document.querySelector('.showcase2');
+        menuToggle8.addEventListener('click', () => {
+          menuToggle8.classList.toggle('active');
+          showcase8.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
